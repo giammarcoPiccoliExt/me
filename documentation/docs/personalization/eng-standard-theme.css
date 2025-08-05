@@ -1,0 +1,377 @@
+
+@media screen {
+    /* ===================================================
+    COLORI PRINCIPALI
+    =================================================== */
+    :root {
+        --md-primary-fg-color: #162538;
+        --md-primary-fg-color--light: #ffffffde;
+        --md-primary-fg-color--dark: #ffffffde;
+        --md-primary-bg-color: #ffffffde;
+        
+        --md-accent-fg-color: #ffab66;
+        --md-accent-bg-color--light: #ffffffb3;
+    }
+    
+    /* ===================================================
+    TEMA DEFAULT
+    =================================================== */
+    :root,
+    [data-md-color-scheme=default] {
+        --md-default-fg-color: #ffffffde;
+        
+        --md-default-fg-color--light: #fd6c35;
+        --md-default-fg-color--lighter: #fd6c3552;
+        --md-default-fg-color--lightest: #fd6c3533;
+        
+        --md-default-bg-color: #162538;
+        
+        --md-default-bg-color--light: #ffffffb3;
+        --md-default-bg-color--lighter: #ffffff4d;
+        --md-default-bg-color--lightest: #ffffff1f;
+        
+        --md-code-bg-color: #f5f5f5;
+        --md-code-hl-color: #623300;
+        
+        --md-typeset-table-color: #414968;
+        --md-typeset-table-color--light: rgb(65, 73, 104, 1);
+    }
+    
+    /* ===================================================
+    TESTO E FONT
+    =================================================== */
+    body {
+        font-family: 'Inter', sans-serif;
+    }
+    
+    p {
+        line-height: 1.6;
+        margin-bottom: 20px;
+    }
+    
+    button {
+        color: var(--md-accent-fg-color);
+    }
+    
+    figcaption {
+        color: var(--md-accent-fg-color) !important;
+    }
+    
+    /* ===================================================
+    HEADER
+    =================================================== */
+    header.md-header.md-header--shadow {
+        box-shadow: unset;
+        border-bottom: 1px solid var(--md-default-bg-color--lighter);
+    }
+    
+    .md-header__topic {
+        color: #F97316;
+    }
+    
+    /* ===================================================
+    NAVIGAZIONE
+    =================================================== */
+    .md-nav__item .md-nav__link--active,
+    .md-nav__item .md-nav__link--active code {
+        color: var(--md-default-fg-color--light);
+    }
+    
+    .md-nav__link--passed {
+        color: var(--md-default-bg-color--lighter);
+    }
+    
+    .md-tabs__item {
+        display: flex;
+        align-items: center;
+        color: #CBD5E1;
+    }
+    
+    .md-tabs__item--active {
+        color: #F97316 !important;
+        font-weight: bold;
+    }
+    
+    .md-tabs__link--active::after {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 3px;
+        background-color: #F97316;
+        margin-top: 4px;
+        transition: width 0.3s ease-in-out;
+    }
+    
+    /* ===================================================
+    TABELLE
+    =================================================== */
+    table {
+        width: 100% !important;
+        border-collapse: collapse !important;
+    }
+    
+    th, td {
+        word-wrap: break-word;
+        white-space: pre-wrap !important;
+        overflow-wrap: break-word !important;
+        text-align: left !important;
+    }
+    
+    th:nth-child(1), td:nth-child(1) {
+        max-width: 30ch !important;
+    }
+    
+    th:nth-child(2), td:nth-child(2) {
+        max-width: 40ch !important;
+    }
+    
+    th:nth-child(3), td:nth-child(3) {
+        max-width: 60ch !important;
+    }
+    
+    th:nth-child(4), td:nth-child(4) {
+        max-width: 30ch !important;
+    }
+    
+    /* ===================================================
+    TITOLI
+    =================================================== */
+    h1, h2, h3, h4, h5, h6 {
+        position: relative;
+        padding-bottom: 5px;
+        color: var(--md-accent-fg-color);
+    }
+    
+    h1 {
+        color: #F97316;
+    }
+    
+    h1::after, h2::after, h3::after, h4::after, h5::after, h6::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 1px;
+        background-color: var(--md-accent-fg-color) !important;
+    }
+    
+    h1::after {
+        background-color: #F97316 !important;
+    }
+    
+    /* ===================================================
+    IMMAGINI
+    =================================================== */
+    p img {
+        box-shadow: var(--md-shadow-z3);
+        border: 1px solid var(--md-default-bg-color--lighter);
+    }
+    
+    /* ===================================================
+    LINK
+    =================================================== */
+    a:not(.md-nav__link) {
+        color: #80d4ff;
+        text-decoration: none;
+        font-weight: bold;
+    }
+    
+    a:hover {
+        color: #ff8c00;
+        text-decoration: underline;
+    }
+    
+    a:visited:not(.md-nav__link) {
+        color: rgb(255, 171, 102);
+    }
+    
+    /* ===================================================
+    CONTENUTO
+    =================================================== */
+    .md-content {
+        border-left: 2px solid #444;
+        border-right: 2px solid #444;
+        margin-right: 10px;
+    }
+    
+    /* ===================================================
+    ICONE & COMPONENTI CUSTOM
+    =================================================== */
+    
+    @font-face {
+        font-family: 'Segoe MDL2 Assets';
+        src: url('../personalization/segoe-md12-assets.woff2') format('woff2'),
+        url('../personalization/segoe-md12-assets.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+    }
+    
+    .ms-Icon {
+        font-family: 'Segoe MDL2 Assets';
+        font-size: 18px;
+        margin-right: 8px;
+        display: inline-flex;
+        align-items: center;
+        vertical-align: middle;
+        line-height: 1;
+    }
+    
+    pre code {
+        display: block;
+        background:#202020 !important; /* rosso per test */
+        color: white;
+        padding: 1rem;
+        margin: 1rem 0;
+        border-radius: 8px;
+        overflow-x: auto;
+        font-family: monospace;
+        font-size: 0.95rem;
+    }
+    
+    code {
+        background:#202020 !important; /* rosso anche per inline code */
+        color: white;
+        padding: 0.2em 0.4em;
+        border-radius: 4px;
+        font-family: monospace;
+    }
+    p code,
+    li code,
+    strong code,
+    em code,
+    span code,
+    code {
+        background: #202020 !important;
+        color: rgb(11, 136, 238) !important;
+        padding: 0.2em 0.4em;
+        border-radius: 4px;
+        font-family: monospace;
+    }
+    
+    
+    .md-sidebar--secondary {
+        width: 200px;
+    }
+    
+    .md-content {
+        max-width: none;
+        flex: 1;
+    }
+    
+    
+    /* =============================================
+    Swagger UI - Tema SCMP Docs
+    ============================================= */
+    
+    /* Sfondo generale e font */
+    .swagger-ui, .swagger-ui .wrapper {
+        background-color: #162538 !important;
+        color: #ffffffde !important;
+        font-family: 'Inter', sans-serif !important;
+    }
+    
+    /* Titoli */
+    .swagger-ui .opblock-tag,
+    .swagger-ui .opblock-summary-description,
+    .swagger-ui .info hgroup h2,
+    .swagger-ui h4, .swagger-ui h5 {
+        color: #ffab66 !important;
+    }
+    
+    /* Pulsanti */
+    .swagger-ui .btn {
+        background-color: transparent !important;
+        border: 1px solid #ffab66 !important;
+        color: #ffab66 !important;
+        border-radius: 4px !important;
+    }
+    
+    .swagger-ui .btn.cancel {
+        color: #ff6666 !important;
+        border-color: #ff6666 !important;
+    }
+    
+    .swagger-ui .btn:hover {
+        background-color: #ffab6620 !important;
+    }
+    
+    /* GET, POST, ecc. */
+    .swagger-ui .opblock.opblock-get {
+        background: #1f2f47 !important;
+        border-color: #80d4ff !important;
+    }
+    
+    .swagger-ui .opblock.opblock-get .opblock-summary-method {
+        background: #80d4ff !important;
+        color: #162538 !important;
+    }
+    
+    /* Parametri e input */
+    .swagger-ui input[type="text"],
+    .swagger-ui textarea,
+    .swagger-ui select {
+        background-color: #ffffff1f !important;
+        color: #ffffffde !important;
+        border: 1px solid #ffffff4d !important;
+    }
+    
+    .swagger-ui input[type="text"]:focus,
+    .swagger-ui textarea:focus,
+    .swagger-ui select:focus {
+        border-color: #ffab66 !important;
+        outline: none !important;
+    }
+    
+    /* Etichette parametri */
+    .swagger-ui .parameter__name,
+    .swagger-ui .parameter__type,
+    .swagger-ui .parameter__in {
+        color: #ffab66 !important;
+    }
+    
+    /* Link */
+    .swagger-ui a {
+        color: #80d4ff !important;
+    }
+    
+    .swagger-ui a:hover {
+        color: #ff8c00 !important;
+    }
+    
+    /* Scrollbar migliorata */
+    .swagger-ui ::-webkit-scrollbar {
+        width: 8px;
+    }
+    .swagger-ui ::-webkit-scrollbar-thumb {
+        background-color: #ffffff4d;
+        border-radius: 4px;
+    }
+    /* Impedisce l'andata a capo e allunga il corpo per piu info sulla stessa pagina
+    .md-nav__link {
+    white-space: nowrap; 
+    }
+    .md-main__inner {
+    max-width: 100% !important;
+    padding-left: 10px;
+    padding-right: 10px;
+    }
+    
+    .md-content {
+    max-width: 100% !important;
+    flex-grow: 1;
+    margin: 0 auto;
+    }
+    
+    .md-sidebar--primary {
+    width: 300px !important;  
+    }
+    */
+}
+
+figcaption::before {
+  content: none !important;
+}
+  .no-print {
+    display: none !important;
+  }

@@ -1,0 +1,73 @@
+{
+  "site_name": "Documentazione Super Progetto",
+  "author": "Mario Rossi",
+  "numeroDocumento": "C000CMP01STP01",
+  "revisione": "08.00",
+  "data": "20/06/2025",
+  "cageCode": "A0069",
+
+  
+  "titoli": {
+    "titolo1": "Digital Security",
+    "titolo2": "Secure Cloud Management Platform", 
+    "titolo3": "Secure Cloud Management Platform"
+    },
+
+
+  "autori": {
+    "autore": {
+      "nome": "Carmelo Sciuto",
+      "qualifica": "Product Owner IPT di Sviluppo",
+      "area": "R. Cloud Product | Digital Systems & Engineering Technologies | Engineering"
+    },
+    "verifica1": {
+      "nome": "Andrea Giorgio Busà",
+      "qualifica": "PEM IPT di Prodotto",
+      "area": "R. Digital Systems & Engineering Technologies | Engineering"
+    },
+    "verifica2": {
+      "nome": "Simonetta De Biase",
+      "qualifica": "PAM IPT Sviluppo",
+      "area": "Quality Cyber Security, Intelligence & Digital Solutions"
+    },
+    "approvazione1": {
+      "nome": "Daniele Leone",
+      "qualifica": "IPT Leader IPT di Sviluppo",
+      "area": "R. Digital Platform | Digital Systems & Engineering Technologies | Engineering"
+    },
+    "approvazione2": {
+      "nome": "Susanna Fortunato",
+      "qualifica": "Technical Authority",
+      "area": "Solution Architects | LoB Public Admin., Defence & Inter. Agencies"
+    },
+    "autorizzazione": {
+      "nome": "Fabio Russo",
+      "qualifica": "Product Manager IPT Prodotto",
+      "area": "Product Management Digital Trasformation | Product Management"
+    }
+  },
+  "contatti": {
+    "riferimento": {
+      "nome": "Carmelo Sciuto",
+      "qualifica": "Product Owner IPT di Sviluppo",
+      "area": "R. Cloud Product | Digital Systems & Engineering Technologies | Engineering",
+      "email": "",
+      "azienda": "Leonardo S.p.A.",
+      "via": "Via A. Agosta SNC",
+      "citta": "95121 Catania"
+    }
+  },
+
+
+
+  "headerFooterPdf": {
+    "qualifica": "NON CLASSIFICATO",
+    "classifica": "Company internal",
+    "clausola": "Clausola riguardante la tutela delle informazioni",
+    "diffusione": "Informazioni a diffusione esclusiva",
+    "copyright" : " © Copyright Leonardo S.p.a. – Tutti i diritti riservati",
+    "template": "Template:DEV183-T-IT-S rev.02 it"
+  }
+
+
+}

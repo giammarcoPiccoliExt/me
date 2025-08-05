@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <title>Secure Cloud Management Platform</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px;
+    }
+
+    .section {
+      margin-bottom: 50px;
+    }
+
+    .metadata p {
+      font-size: 11pt;
+      line-height: 1.8;
+      margin: 0;
+    }
+
+    .title {
+      border: 2px solid red;
+      padding: 30px;
+      text-align: center;
+      margin-top: 30px;
+      page-break-after: always;
+    }
+
+    .title h1 {
+      font-size: 20pt;
+      color: red;
+      margin: 0 0 10px;
+    }
+
+    .title h2 {
+      font-size: 16pt;
+      color: #000;
+      margin: 0 0 10px;
+    }
+
+    .title p {
+      font-size: 14pt;
+      color: #000;
+      margin: 10px 0 0;
+    }
+
+    .main-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 11pt;
+      margin-top: 20px;
+      border-top: 1px solid red;
+      border-left: 1px solid red;
+      border-right: 1px solid black;
+      border-bottom: 1px solid black;
+    }
+
+    .main-table th,
+    .main-table td {
+      border-right: 1px solid black;
+      border-bottom: 1px solid black;
+      padding: 10px;
+      vertical-align: top;
+      text-align: left;
+    }
+
+    .main-table th {
+      background-color: #ffecec;
+    }
+
+    .sign-line {
+      text-align: right;
+    }
+
+    .section-title {
+      font-weight: bold;
+      font-size: 14pt;
+      margin-top: 40px;
+      text-align: center;
+    }
+
+    .page-break {
+      page-break-after: always;
+    }
+
+    a {
+      color: black;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="section metadata">
+    <p>NUMERO DOCUMENTO: <strong>{{numeroDocumento}}</strong></p>
+    <p>REVISIONE: <strong>{{revisione}}</strong></p>
+    <p>DATA: <strong>{{data}}</strong></p>
+    <p>CAGE CODE: <strong>{{cageCode}}</strong></p>
+  </div>
+
+  <div class="title">
+    <h2>{{titoli.titolo1}}</h2>
+    <h1>{{titoli.titolo2}}</h1>
+    <p><strong>{{titoli.titolo3}}</strong></p>
+  </div>
+  <div class="section-title">Firme</div>
+
+<table class="main-table">
+  <tr>
+    <td>
+      Autore:<br />
+      <strong>{{ autori.autore.qualifica }}</strong><br />
+      {{ autori.autore.area }}
+    </td>
+    <td class="sign-line">
+      ..................................................<br />
+      {{ autori.autore.nome }}
+    </td>
+  </tr>
+  <tr>
+    <td>
+      Verifica:<br />
+      <strong>{{ autori.verifica1.qualifica }}</strong><br />
+      {{ autori.verifica1.area }}
+    </td>
+    <td class="sign-line">
+      ..................................................<br />
+      {{ autori.verifica1.nome }}
+    </td>
+  </tr>
+  <tr>
+    <td>
+      Verifica:<br />
+      <strong>{{ autori.verifica2.qualifica }}</strong><br />
+      {{ autori.verifica2.area }}
+    </td>
+    <td class="sign-line">
+      ..................................................<br />
+      {{ autori.verifica2.nome }}
+    </td>
+  </tr>
+  <tr>
+    <td>
+      Approvazione:<br />
+      <strong>{{ autori.approvazione1.qualifica }}</strong><br />
+      {{ autori.approvazione1.area }}
+    </td>
+    <td class="sign-line">
+      ..................................................<br />
+      {{ autori.approvazione1.nome }}
+    </td>
+  </tr>
+  <tr>
+    <td>
+      Approvazione:<br />
+      <strong>{{ autori.approvazione2.qualifica }}</strong><br />
+      {{ autori.approvazione2.area }}
+    </td>
+    <td class="sign-line">
+      ..................................................<br />
+      {{ autori.approvazione2.nome }}
+    </td>
+  </tr>
+  <tr>
+    <td>
+      Autorizzazione:<br />
+      <strong>{{ autori.autorizzazione.qualifica }}</strong><br />
+      {{ autori.autorizzazione.area }}
+    </td>
+    <td class="sign-line">
+      ..................................................<br />
+      {{ autori.autorizzazione.nome }}
+    </td>
+  </tr>
+</table>
+
+<div class="section-title">Contatti</div>
+<table class="main-table">
+  <tr>
+    <td class="sign-line">
+      {{ contatti.riferimento.nome }}<br />
+      <strong>{{ contatti.riferimento.qualifica }}</strong><br />
+      {{ contatti.riferimento.area }}<br />
+      <a href="mailto:{{ contatti.riferimento.email }}">{{ contatti.riferimento.email }}</a>
+    </td>
+    <td class="sign-line">
+      <strong>{{ contatti.riferimento.azienda }}</strong><br />
+      {{ contatti.riferimento.via }}<br />
+      {{ contatti.riferimento.citta }}
+    </td>
+  </tr>
+</table>
+
+
+  <div class="page-break"></div>
+
+<div class="section">
+  <div class="section-title">Lista delle Revisioni</div>
+  <table class="main-table">
+    <thead>
+      <tr>
+        <th>Rev.</th>
+        <th>Numero Modifiche</th>
+        <th>Data</th>
+        <th>Descrizione</th>
+        <th>Autore</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>01.00</td>
+        <td>-</td>
+        <td>24/01/2022</td>
+        <td>Prima emissione</td>
+        <td>D. Leone</td>
+      </tr>
+      <tr>
+        <td>02.00</td>
+        <td>DCN222372</td>
+        <td>29/07/2022</td>
+        <td>Integrazione Rilascio SCMP 2.0.0</td>
+        <td>D. Leone</td>
+      </tr>
+      <tr>
+        <td>03.00</td>
+        <td>DCN222981</td>
+        <td>20/12/2022</td>
+        <td>Integrazione Rilascio SCMP 3.0.0</td>
+        <td>D. Leone</td>
+      </tr>
+      <tr>
+        <td>04.00</td>
+        <td>DCN230550</td>
+        <td>30/06/2023</td>
+        <td>Integrazione Rilascio SCMP 4.0.0</td>
+        <td>D. Leone</td>
+      </tr>
+      <tr>
+        <td>05.00</td>
+        <td>DCN231199</td>
+        <td>22/12/2023</td>
+        <td>Integrazione Rilascio SCMP 5.0.0</td>
+        <td>D. Leone</td>
+      </tr>
+      <tr>
+        <td>06.00</td>
+        <td>DCN240480</td>
+        <td>28/07/2024</td>
+        <td>Integrazione Rilascio SCMP 6.0.0</td>
+        <td>D. Leone</td>
+      </tr>
+      <tr>
+        <td>07.00</td>
+        <td>DCN240891</td>
+        <td>20/12/2024</td>
+        <td>Integrazione Rilascio SCMP 7.0.0</td>
+        <td>D. Leone</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+
+
+
+</body>
+</html>

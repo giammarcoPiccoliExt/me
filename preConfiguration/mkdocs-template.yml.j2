@@ -1,0 +1,47 @@
+
+use_directory_urls: false
+
+site_name: "{{ site_name }}"
+site_author: "{{ author }}"
+
+theme:
+  name: material
+
+
+nav:
+{{ nav_yaml | indent(0) }}
+
+# Configuration
+theme:
+  name: material
+  custom_dir: docs/personalization
+  logo: logo.png
+
+extra_css:
+- personalization/eng-standard-theme.css
+- personalization/toc.css
+- personalization/fabric.min.css
+
+extra_javascript:
+- personalization/toc.js
+- personalization/script.js
+
+# Customization
+extra:
+  version:
+    provider: mike
+  navigation:
+    collapse: true
+  media_dir: 'images/media'
+
+plugins:
+- search
+- render_swagger:
+    css: personalization/swagger-ui.css
+- print-site
+
+markdown_extensions:
+- markdown_captions
+- admonition
+- pymdownx.details
+- pymdownx.superfences

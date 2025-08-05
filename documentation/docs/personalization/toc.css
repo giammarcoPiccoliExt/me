@@ -1,0 +1,37 @@
+/* Applica lo stile solo alla sidebar TOC */
+.md-sidebar--secondary .md-nav__list {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  /* Nasconde le sottosezioni */
+  .md-sidebar--secondary .md-nav__item ul {
+    display: none;
+    padding-left: 10px;
+  }
+  
+  /* Mostra la sezione attiva */
+  .md-sidebar--secondary .md-nav__item--active > .md-nav__list {
+    display: block;
+  }
+  
+  /* Stile delle freccette SOLO se ci sono figli */
+  .md-sidebar--secondary .md-nav__item.has-children > .md-nav__link {
+    position: relative;
+    cursor: pointer;
+  }
+  
+  /* Freccia chiusa SOLO se ci sono figli */
+  .md-sidebar--secondary .md-nav__item.has-children > .md-nav__link::before {
+    content: "▶";
+    position: absolute;
+    left: -1.2em;
+    font-size: 0.8em;
+    transition: transform 0.3s;
+  }
+  
+  /* Freccia aperta SOLO se ci sono figli */
+  .md-sidebar--secondary .md-nav__item.has-children.md-nav__item--active > .md-nav__link::before {
+    content: "▼";
+  }
+  
