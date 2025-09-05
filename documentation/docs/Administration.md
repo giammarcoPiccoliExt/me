@@ -25,7 +25,7 @@ A questo punto, l’utente si ritrova all’interno della pagina del tab “Clou
 
 Possiamo notare che nella lista sono presenti delle "folder", dei contenitori di sottosistemi, cliccando in corrispondenza della "freccia" sulla riga della folder possiamo visualizzare i sottosistemi al suo interno e le loro informazioni
 
-![Lista dei sottosistemi e delle folder](images/media/270125001.png)
+![Lista dei sottosistemi e delle folder](images/extract/media/270125001.png)
 
 Inoltre, per ogni sottosistema è disponibile uno status, rappresentato da un “led” colorato:
 
