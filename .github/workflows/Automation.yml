@@ -13,7 +13,7 @@ env:
   RUN_VERSIONING: 'true'
   RUN_BUILD_DOCS: 'true'
   RUN_GENERATE_PDF: 'true'
-  RUN_DEPLOY_DOCS: 'true'
+  RUN_DEPLOY_DOCS: 'false'
 
 jobs:
   doc_pipeline:
