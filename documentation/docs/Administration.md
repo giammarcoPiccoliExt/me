@@ -1130,7 +1130,7 @@ Per accedere a questa funzionalità è necessario selezionare il tab “CommVaul
 
 Verremo riportati alla pagina che contiene la lista di tutti i “CommVault” configurati e cliccando sul menù presente sulla destra sarà possibile aggiungere un nuovo CommVault
 
-![Accesso a CommVault](images/extract/media/image96.png)
+![Accesso a CommVault](images/extract/media/image96.png)ffff
 
 In questa pagina , dopo aver inserito le credenziali di accesso (indirizzo ip, utenza e password) possiamo cliccare sul pulsante “Test connection” per confermare il corretto inserimento dei dati e successivamente confermare l’inserimento tramite il pulsante “Save”.
 
