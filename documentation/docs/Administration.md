@@ -19,13 +19,13 @@ All’interno della funzionalità sarà possibile:
 
 Per accedere alla funzionalità di Administration, in alto a sinistra cliccare sul pulsante bento. Dopodiché, cliccare su “Administration”
 
-![Accesso alla funzionalità di Administration](images/extract/media/270125001.png)
+![Accesso alla funzionalità di Administration](images/media/270125001.png)
 
 A questo punto, l’utente si ritrova all’interno della pagina del tab “Cloud Systems”, dove possiamo visualizzare delle informazioni generali sui sottosistemi, ad esempio il provider di riferimento e la data di creazione del sottosistema e viene inoltre indicato con una spunta rossa se il sistema è di tipo On-Premise.
 
 Possiamo notare che nella lista sono presenti delle "folder", dei contenitori di sottosistemi, cliccando in corrispondenza della "freccia" sulla riga della folder possiamo visualizzare i sottosistemi al suo interno e le loro informazioni
 
-![Lista dei sottosistemi e delle folder](images/extract/media/270125001.png)
+![Lista dei sottosistemi e delle folder](images/media/270125001.png)
 
 Inoltre, per ogni sottosistema è disponibile uno status, rappresentato da un “led” colorato:
 
@@ -45,38 +45,38 @@ Per visualizzare l'esito di queste operazioni, cliccare sulla riga del sottosist
 
 Oltre alle quantità di operazioni e il loro esito , scorrendo in basso è possibile visualizzare la lista e i relativi dettagli cliccando la "freccia" in corrispondenza dell' operazione interessata.
 
-![Informazioni sui cron-job ](images/extract/media/image55.png)
+![Informazioni sui cron-job ](images/media/image55.png)
 
 ##### Visualizzazione, modifica ed eliminazione di un sottosistema
 
 Per visualizzare i dati di un Cloud Provider, all’interno della lista, cliccare sul kebab menu in corrispondenza del Cloud Provider di interesse e cliccare su “Show” .
 
-![Accesso al Cloud Provider in modalità visualizzazione](images/extract/media/image43.png)
+![Accesso al Cloud Provider in modalità visualizzazione](images/media/image43.png)
 
 In questa pagina è possibile visualizzare la configurazione del Provider
 
-![Sottosistema in modalità visualizzazione](images/extract/media/image44.png)
+![Sottosistema in modalità visualizzazione](images/media/image44.png)
 
 Se il provider è di tipo “ON-PREMISE” sotto la configurazione sarà visibile una tabella che riporta le capacità utilizzabili sul sistema e la lista delle risorse già presenti nel sottosistema
 
-![Lista macchine On-Premise](images/extract/media/image45.png)
+![Lista macchine On-Premise](images/media/image45.png)
 
 Per tornare alla pagina dei Cloud Provider, in basso a sinistra, cliccare sul pulsante “Close”.
 
 Per modificare i dati di un Cloud Provider, all’interno della lista, cliccare sul kebab menu in corrispondenza di un Cloud Provider, e cliccare su “Edit”
 
-![Accesso al Cloud Provider in modalità edit](images/extract/media/image46.png)
+![Accesso al Cloud Provider in modalità edit](images/media/image46.png)
 
 Fatto ciò, l’utente si ritroverà all’interno della pagina del Cloud Provider in modalità "edit", modalità che consente di modificare i dati.
 
 Per tornare alla pagina dei Cloud Provider, in basso a sinistra, cliccare sul pulsante “Save”.
 A questo punto, l’utente si ritroverà all’interno della pagina dei Cloud Provider.
 
-![Avvio per l'eliminazione di un Cloud Provider](images/extract/media/image47.png)
+![Avvio per l'eliminazione di un Cloud Provider](images/media/image47.png)
 
 Per eliminare un Cloud Provider, all’interno della lista, cliccare sul kebab menu in corrispondenza di un Cloud Provider, e cliccare su “Delete”
 
-![Conferma eliminazione del Cloud Provider](images/extract/media/image48.png)
+![Conferma eliminazione del Cloud Provider](images/media/image48.png)
 
 Fatto ciò, apparirà una modale in cui è necessario cliccare sul pulsante “Remove”
 
@@ -97,22 +97,22 @@ I provider che utilizzano questa funzionalità sono:
 
 Per poter modificare il modello cliccare il pulsante “tre punti” in corrispondenza di un sottosistema e selezionare la voce “Cost model”.
 
-![Accesso al cost model del sottosistema](images/extract/media/image49.png)
+![Accesso al cost model del sottosistema](images/media/image49.png)
 
 Nella pagina del modello troviamo una prima sezione generica dove sarà possibile configurare i campi:
 
 - Currency: la moneta di riferimento da utilizzare per il sottosistema.
 - Discount/Surcharge: una percentuale di sconto o ricarico da applicare ai costi del cliente.
 
-![Modello di costo](images/extract/media/270125002.png)
+![Modello di costo](images/media/270125002.png)
 
 Successivamente cliccando il pulsante “Add rate” verrà aperta una modale nella quale, dopo aver scelto una metrica (specifica per il provider) e la relativa unità di misura da utilizzare, verrà inserito il prezzo da applicare a tutti gli elementi del sottosistema, infine cliccare il pulsante “Save” per confermare l’inserimento .
 
-![Selezione della metrica da prezzare](images/extract/media/image51.png)
+![Selezione della metrica da prezzare](images/media/image51.png)
 
 Per confermare la modifica al modello dopo aver inserito tutte i costi per ogni tipologia di componente disponibile cliccare il pulsante “Apply” in basso.
 
-![Modello dei costi completo](images/extract/media/image52.png)
+![Modello dei costi completo](images/media/image52.png)
 
 ##### **Aggiornamento manuale dei costi**
 
@@ -120,17 +120,17 @@ Viene data la possibilità all’ utente di effettuare un aggiornamento manuale 
 
 Per richiedere l’aggiornamento di un singolo sottosistema cliccare il pulsante “tre punti” sulla riga del sottosistema e selezionare la voce “Refresh Cost”
 
-![Aggiornamento manuale dei costi](images/extract/media/image53.png)
+![Aggiornamento manuale dei costi](images/media/image53.png)
 
 All’interno della modale possiamo indicare per quanti giorni, a partire dalla data odierna, devono essere riscaricati e riconfermati i costi del sottosistema selezionato. Dopo la conferma possiamo andare nella sezione “Info dei cron-job” per confermare le operazioni.
 
 Inoltre è possibile richiedere l’aggiornamento dei costi per tutto il tenant: cliccando prima sul pulsante “hamburger menu” disponibile in alto a sinistra e selezionando la voce “refresh cost”, l’attività sarà distribuita su tutti i sottosistemi disponibili nella pagina
 
-![Aggiornamento dei costi su tutto tenant](images/extract/media/image54.png)
+![Aggiornamento dei costi su tutto tenant](images/media/image54.png)
 
 Una volta selezionato un recupero costi è possibile indicare il numero dei giorni da recuperare e selezionando il box "Reset the cost" la SCMP effettuerà prima una pulizia dei dati (del relativo range selezionato) e successivamente effettua il refresh
 
-![Configurazione del refresh costi](images/extract/media/20250604001.png)
+![Configurazione del refresh costi](images/media/20250604001.png)
 
 ##### Processo di recupero e calcolo dei costi
 
@@ -218,7 +218,7 @@ In basso i dettagli specifici per tipologia di sottosistema
 
 Per inserire un nuovo sottosistema all’ interno del portale bisogna cliccare sul “menu” disponibile in alto a destra e selezionare “+ Aggiungi nuovo cloud provider”
 
-![Aggiunta di un nuovo Cloud Provider](images/extract/media/image56.png)
+![Aggiunta di un nuovo Cloud Provider](images/media/image56.png)
 
 L’utente visualizza i dati di base del sottosistema da inserire, spiegati in seguito.
 
@@ -230,7 +230,7 @@ All’ interno della pagina di creazione  possiamo notare 3 campi :
 - Tipo: indica la tipologia di cloud provider al quale appartiene il sottosistema.
 - Versione: la versione relativa al provider del sottosistema da installare.
 
-![Parametri generali di un sottosistema](images/extract/media/image57.png)
+![Parametri generali di un sottosistema](images/media/image57.png)
 
 Dopo aver selezionato la tipologia e la versione del sistema la maschera si aggiorna per visualizzare i parametri specifici in base al provider selezionato, visto che ognuno di loro gestisce l’autenticazione e le risorse in maniera differente.
 
@@ -246,7 +246,7 @@ Il tasto “Chiudi” che permette di annullare l’inserimento di un nuovo sott
 
 Il tasto “Test Connection” serve ad effettuare un test di connessione utilizzando i parametri inseriti, in caso di errori il sistema ritorna un messaggio di errore che indica “Error: Unauthorized system” e il pulsante diventa di colore rosso, in caso contrario il pulsante diventerà verde e sarà possibile salvare il sottosistema utilizzando il tasto “Salva”.
 
-![Pulsanti di connessione](images/extract/media/image58.png)
+![Pulsanti di connessione](images/media/image58.png)
 
 Al salvataggio, la SCMP comunicherà al modulo che gestisce quella tipologia di provider, di caricare all’interno del nostro bus (Kafka) tutti gli item relativi all’inventario, metriche, costi ed elementi di security.
 
@@ -269,7 +269,7 @@ Funzionalità abilitate:
 
 I parametri specifici del sottosistema Amazon Web Services da inserire sono esposti nella tabella:
 
-![Maschera di configurazione Amazon Web Services](images/extract/media/image59.png)
+![Maschera di configurazione Amazon Web Services](images/media/image59.png)
 
 Vengono indicati con \* i parametri obbligatori
 
@@ -417,7 +417,7 @@ Funzionalità abilitate:
 
 I parametri specifici  del sottosistema Azure da inserire sono esposti nella tabella:
 
-![Maschera di configurazione Azure](images/extract/media/image60.png)
+![Maschera di configurazione Azure](images/media/image60.png)
 
 Vengono indicati con \* i parametri obbligatori
 
@@ -460,7 +460,7 @@ Funzionalità abilitate:
 
 I parametri specifici del sottosistema AzureStack da inserire sono esposti nella tabella:
 
-![Maschera di configurazione AzureStack](images/extract/media/image61.png)
+![Maschera di configurazione AzureStack](images/media/image61.png)
 
 Vengono indicati con \* i parametri obbligatori
 
@@ -494,7 +494,7 @@ Funzionalità abilitate:
 
 I parametri specifici del sottosistema AzureStack HCI da inserire sono esposti nella tabella:
 
-![Maschera di configurazione AzureStack HCI](images/extract/media/image62.png)
+![Maschera di configurazione AzureStack HCI](images/media/image62.png)
 
 Vengono indicati con \* i parametri obbligatori
 
@@ -526,7 +526,7 @@ Funzionalità abilitate:
 
 I parametri specifici del sottosistema AzureStack Hybrid cloud da inserire sono esposti nella tabella:
 
-![Maschera di configurazione AzureStack Hybrid cloud](images/extract/media/image63.png)
+![Maschera di configurazione AzureStack Hybrid cloud](images/media/image63.png)
 
 Vengono indicati con \* i parametri obbligatori
 
@@ -560,7 +560,7 @@ Funzionalità abilitate:
 
 I parametri specifici del sottosistema Google Cloud da inserire sono esposti nella tabella.
 
-![Maschera di configurazione Edge](images/extract/media/image64.png)
+![Maschera di configurazione Edge](images/media/image64.png)
 
 Vengono indicati con \* i parametri obbligatori
 
@@ -618,7 +618,7 @@ Recupero elementi di catalogo
 
 I parametri specifici del sottosistema Google Cloud da inserire sono esposti nella tabella, il campo “Service account” può essere inserito sia automaticamente che manualmente come descritto nel paragrafo.
 
-![Maschera di configurazione Google](images/extract/media/image65.png)
+![Maschera di configurazione Google](images/media/image65.png)
 
 Vengono indicati con \* i parametri obbligatori (disponibili in basso sotto la sezione relativa al service account).
 
@@ -645,7 +645,7 @@ Vengono indicati con \* i parametri obbligatori (disponibili in basso sotto la s
 
     Questa distinzione è necessaria per evitare che le API Azure rispondano con un errore 429 legato al grande numero di richieste effettuate, inoltre per utilizzare i metodi descritti precedentemente è necessario che il sistema Azure sia configurato correttamente e le utenze inserite abbiano tutti i permessi necessari
 
-![Caricamento del file di configurazione](images/extract/media/image66.png)
+![Caricamento del file di configurazione](images/media/image66.png)
 
 Effettuando l’upload del file il form viene completato automaticamente con i parametri necessari, ma è possibile anche inserirli manualmente (riquadro giallo presente nell’ immagine), seguendo la tabella, tutti i campi sono obbligatori:
 
@@ -737,7 +737,7 @@ Funzionalità abilitate:
 
 I parametri specifici del sottosistema Kubernetes da inserire sono esposti nella tabella
 
-![Maschera di configurazione Kubernetes](images/extract/media/image67.png)
+![Maschera di configurazione Kubernetes](images/media/image67.png)
 
 Vengono indicati con \* i parametri obbligatori
 
@@ -768,7 +768,7 @@ Funzionalità abilitate:
 
 I parametri specifici del sottosistema OpenShift da inserire sono esposti nella tabella:
 
-![Maschera di configurazione OpenShift](images/extract/media/image68.png)
+![Maschera di configurazione OpenShift](images/media/image68.png)
 
 Vengono indicati con \* i parametri obbligatori
 
@@ -800,7 +800,7 @@ Funzionalità abilitate:
 
 I parametri specifici del sottosistema Oracle da inserire sono esposti nella tabella:
 
-![Maschera di configurazione Oracle](images/extract/media/image69.png)
+![Maschera di configurazione Oracle](images/media/image69.png)
 
 Vengono indicati con \* i parametri obbligatori
 
@@ -828,7 +828,7 @@ Funzionalità abilitate:
 
 I parametri specifici del sottosistema OracleExAcc da inserire sono esposti nella tabella:
 
-![Maschera di configurazione OracleExAcc](images/extract/media/image70.png)
+![Maschera di configurazione OracleExAcc](images/media/image70.png)
 
 Vengono indicati con \* i parametri obbligatori
 
@@ -855,7 +855,7 @@ Funzionalità abilitate:
 
 I parametri specifici del sottosistema VCloudDirector da inserire sono esposti nella tabella
 
-![Maschera di configurazione VCloudDirector](images/extract/media/image71.png)
+![Maschera di configurazione VCloudDirector](images/media/image71.png)
 
 Vengono indicati con \* i parametri obbligatori
 
@@ -885,7 +885,7 @@ Funzionalità abilitate:
 
 I parametri specifici del sottosistema VMWare da inserire sono esposti nella tabella:
 
-![Maschera di configurazione VMWare](images/extract/media/image72.png)
+![Maschera di configurazione VMWare](images/media/image72.png)
 
 Vengono indicati con \* i parametri obbligatori
 
@@ -914,11 +914,11 @@ Durante la creazione di un provider selezionando la tipologia “Azure”  possi
 
 - Un box di conferma per indicare alla SCMP se il provider in inserimento è una “Folder”.
 
-![Opzione folder Azure](images/extract/media/image73.png)
+![Opzione folder Azure](images/media/image73.png)
 
 I parametri specifici del sottosistema Azure da inserire sono esposti nella tabella seguente:
 
-![Maschera di configurazione Azure Folder](images/extract/media/image74.png)
+![Maschera di configurazione Azure Folder](images/media/image74.png)
 
 Vengono indicati con \* i parametri obbligatori
 
@@ -941,7 +941,7 @@ Durante la creazione di un provider selezionando la tipologia “Google Cloud”
 1. Un box di conferma per indicare alla SCMP se il provider in inserimento è una “Folder”.
 2. Un box dove, cliccando all’ interno sarà possibile, tramite la finestra di selezione file di windows inserire il file di tipo “JSON” esportato direttamente dalla console Google.
 
-![Parametri specifici di Google Cloud](images/extract/media/image75.png)
+![Parametri specifici di Google Cloud](images/media/image75.png)
 
 I parametri specifici della Google Folder da inserire sono esposti nella tabella:
 
@@ -973,30 +973,30 @@ Il campo “ServiceAccount” può essere inserito automaticamente effettuando l
 
 Dopo aver configurato un sistema di tipo “Folder” esso verrà visualizzato sia nella lista dei cloud provider, sia nella pagina delle folder.
 
-![Visualizzazione delle folder](images/extract/media/image76.png)
+![Visualizzazione delle folder](images/media/image76.png)
 
 Dalla pagina di “Cloud System” del modulo di “Administration” cliccare in alto a destra il tab “Folders”  dove verrà visualizzata la lista delle folder configurate nel tenant.
 
 All’interno della pagina è possibile effettuare le stesse operazioni di visualizzazione modifica e eliminazione delle folder effettuate sulla pagina dei “Cloud Provider” .
 
-![Accesso a Folders](images/extract/media/image77.png)
+![Accesso a Folders](images/media/image77.png)
 
 Accedendo ad una “Folder” in modalità “View” scorrendo in basso nella pagina possiamo visualizzare la lista dei sottosistemi presenti nel provider e le relative informazioni sullo status:
 
 - In verde possiamo notare un sottosistema configurato correttamente nel provider e che la SCMP provvede ad inserire automaticamente nel sistema e sarà visibile nella sezione “Cloud Providers” e in tutte le funzionalità della SCMP.
 - In rosso possiamo notare un sottosistema configurato in maniera errata che, dopo le opportune modifiche dalla console di “Google Cloud”, potrà essere accettato dalla SCMP.
 
-![Visualizzazione sottosistemi della Folder](images/extract/media/image78.png)
+![Visualizzazione sottosistemi della Folder](images/media/image78.png)
 
 ### SIEM
 
 L’utente può creare un provider di tipo SIEM, cliccando sul tab che raffigura uno scudo, posizionato nella barra in alto, d0opo aver effettuato l’accesso alla pagina “Cloud SIEMs”, in alto a destra, cliccare sull'hamburger menu e poi cliccare su “Attach a SIEM”
 
-![Creazione di un cloud provider SIEM](images/extract/media/image79.png)
+![Creazione di un cloud provider SIEM](images/media/image79.png)
 
 All’interno della pagina “Add SIEM” , compilare tutti i campi della sezione “General properties”. Dopo aver fatto questo, compilare tutti i campi della sezione “SIEM’s properties” seguendo la tabella:
 
-![Compilazione del form per la creazione di un provider SIEM](images/extract/media/image80.png)
+![Compilazione del form per la creazione di un provider SIEM](images/media/image80.png)
 
 Vengono indicati con \* i parametri obbligatori
 
@@ -1017,31 +1017,31 @@ Infine, in basso a destra, cliccare sul pulsante “Save”. Dopodiché, in bass
 Per visualizzare un SIEM, in corrispondenza di un suddetto, cliccare sul kebab menu e poi cliccare su “Show” . A questo punto, l’utente si ritrova all’interno della pagina “Show SIEM” in cui è possibile visualizzare ma non modificare i dati . Dopo aver visualizzato i dati, in basso a destra, cliccare sul pulsante “Close”.
 Fatto questo, l’utente si ritrova all’interno della lista dei SIEM.
 
-![Accesso al SIEM in modalità visualizzazione](images/extract/media/image81.png)
+![Accesso al SIEM in modalità visualizzazione](images/media/image81.png)
 
-![SIEM in modalità visualizzazione](images/extract/media/image82.png)
+![SIEM in modalità visualizzazione](images/media/image82.png)
 
 Per modificare un SIEM, in corrispondenza di un suddetto, cliccare sul kebab menu e poi cliccare su “Edit” . A questo punto, ci si ritrova all’interno della pagina “Edit SIEM” in cui è possibile modificare i campi .
 
 Dopo aver modificato i campi di interesse, in basso a destra, cliccare sul pulsante “Update”. Fatto ciò, in basso appare un popup di avvenuta modifica del SIEM e l’utente si ritrova all’interno della lista dei SIEM.
 
-![Accesso al SIEM in modalità edit](images/extract/media/image83.png)
+![Accesso al SIEM in modalità edit](images/media/image83.png)
 
-![](images/extract/media/image84.png)
-![SIEM in modalità edit](images/extract/media/image85.png)
+![](images/media/image84.png)
+![SIEM in modalità edit](images/media/image85.png)
 
 Per eliminare un SIEM, in corrispondenza di un suddetto, cliccare sul kebab menu e poi cliccare su “Delete” . A questo punto appare una modale in cui è necessario cliccare sul pulsante “Remove” . Fatto questo, il SIEM non è più presente all’interno della lista.
 
-![Opzione per eliminare un SIEM "Delete"](images/extract/media/image86.png)
+![Opzione per eliminare un SIEM "Delete"](images/media/image86.png)
 
-![Conferma per eliminare un SIEM](images/extract/media/image87.png)
+![Conferma per eliminare un SIEM](images/media/image87.png)
 
 ### Secrets Managers
 
 L’utente può creare un secret manager cliccando sul tab che raffigura un lucchetto, posizionato nella barra in alto, come mostrato in figura
 
 Dopo aver effettuato l’accesso alla pagina “Secret manager”, in alto a destra, cliccare sull'hamburger menu e poi cliccare su “Add a secret manager”
-![Aggiunta di un nuovo Secret Manager](images/extract/media/image88.png)
+![Aggiunta di un nuovo Secret Manager](images/media/image88.png)
 
 Qui un esempio di form nel caso di aggiunta di un Secret manager dal provider di tipo Azure (selezionabile dal dropdown “Type” in alto nella pagina).
 
@@ -1051,7 +1051,7 @@ Dopo aver inserito tutti i parametri richiesti, in basso, cliccare il tasto “S
 
 I parametri specifici  per un Azure key vault da inserire sono esposti nella tabella:
 
-![Maschera di configurazione Azure key vault](images/extract/media/image89.png)
+![Maschera di configurazione Azure key vault](images/media/image89.png)
 
 Vengono indicati con \* i parametri obbligatori
 
@@ -1070,7 +1070,7 @@ Tabella 25 – Campi specifici Azure key vault
 
 I parametri specifici  del Google Secret Manager da inserire sono esposti nella tabella seguente:
 
-![Maschera di configurazione Google Secret Manager](images/extract/media/image90.png)
+![Maschera di configurazione Google Secret Manager](images/media/image90.png)
 
 Vengono indicati con \* i parametri obbligatori
 
@@ -1098,11 +1098,11 @@ Vengono indicati con \* i parametri obbligatori
 
 È possibile visualizzare i dati di un Secret manager, all’interno della lista, cliccando sul kebab menu in corrispondenza di un manager, e successivamente su “Show” .
 
-![Accesso al manager in modalità visualizzazione](images/extract/media/image91.png)
+![Accesso al manager in modalità visualizzazione](images/media/image91.png)
 
 In questa pagina è possibile visualizzare la configurazione del Provider .
 
-![manager in modalità visualizzazione](images/extract/media/image92.png)
+![manager in modalità visualizzazione](images/media/image92.png)
 
 Per tornare alla pagina dei Secret manager, in basso a sinistra, cliccare sul pulsante “Close”.
 
@@ -1110,15 +1110,15 @@ A questo punto, l’utente si ritroverà all’interno della pagina dei Secret m
 
 Per modificare i dati di un Secret manager all’interno della lista, cliccare sul kebab menu in corrispondenza di un Cloud Provider, e cliccare su “Edit” .
 
-![Accesso al manager in modalità edit](images/extract/media/image93.png)
+![Accesso al manager in modalità edit](images/media/image93.png)
 
 Fatto ciò, l’utente si ritroverà all’interno della pagina del Cloud Provider in modalità edit in cui è possibile modificare i dati. Per tornare alla pagina dei Cloud Provider, in basso a sinistra, cliccare sul pulsante “Save”. A questo punto, l’utente si ritroverà all’interno della pagina dei Cloud Provider.
 
 Per eliminare un "Secret manager", all’interno della lista, cliccare sul kebab menu in corrispondenza di un Secret manager, e cliccare su “Delete” .
-![Avvio per l'eliminazione di un Secret manager](images/extract/media/image94.png)
+![Avvio per l'eliminazione di un Secret manager](images/media/image94.png)
 
 Fatto ciò, apparirà una modale in cui è necessario cliccare sul pulsante “Remove”
-![Conferma eliminazione del Secret manager](images/extract/media/image95.png)
+![Conferma eliminazione del Secret manager](images/media/image95.png)
 
 A questo punto, il Secret manager non sarà più presente all’interno della lista e verrà lanciato il flusso di rimozione asset sul resource-manager.
 
@@ -1130,11 +1130,11 @@ Per accedere a questa funzionalità è necessario selezionare il tab “CommVaul
 
 Verremo riportati alla pagina che contiene la lista di tutti i “CommVault” configurati e cliccando sul menù presente sulla destra sarà possibile aggiungere un nuovo CommVault
 
-![Accesso a CommVault](images/extract/media/image96.png)
+![Accesso a CommVault](images/media/image96.png)
 
 In questa pagina , dopo aver inserito le credenziali di accesso (indirizzo ip, utenza e password) possiamo cliccare sul pulsante “Test connection” per confermare il corretto inserimento dei dati e successivamente confermare l’inserimento tramite il pulsante “Save”.
 
-![Creazione della connessione ad un CommVault](images/extract/media/image97.png)
+![Creazione della connessione ad un CommVault](images/media/image97.png)
 
 ### Confidential computing
 
@@ -1144,8 +1144,8 @@ Per accedere a questa funzionalità è necessario selezionare il tab “Confiden
 
 Verremo riportati alla pagina che contiene la lista di tutti i servizi di “Remote attestation” configurati e cliccando sul menù presente sulla destra sarà possibile aggiungere un a nuova connessione .
 
-![Accesso a Confidential Computing](images/extract/media/image98.png)
+![Accesso a Confidential Computing](images/media/image98.png)
 
 In questa pagina , dopo aver inserito le credenziali di accesso (indirizzo ip, utenza e password) possiamo cliccare sul pulsante “Test connection” per confermare il corretto inserimento dei dati e successivamente confermare l’inserimento tramite il pulsante “Save”.
 
-![Creazione della connessione ad un servizio “Remote Attestation”](images/extract/media/image99.png)
+![Creazione della connessione ad un servizio “Remote Attestation”](images/media/image99.png)
