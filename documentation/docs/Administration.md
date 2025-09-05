@@ -19,7 +19,7 @@ All’interno della funzionalità sarà possibile:
 
 Per accedere alla funzionalità di Administration, in alto a sinistra cliccare sul pulsante bento. Dopodiché, cliccare su “Administration”
 
-![Accesso alla funzionalità di Administration](images/extract/media/image42.png)
+![Accesso alla funzionalità di Administration](images/extract/media/270125001.png)
 
 A questo punto, l’utente si ritrova all’interno della pagina del tab “Cloud Systems”, dove possiamo visualizzare delle informazioni generali sui sottosistemi, ad esempio il provider di riferimento e la data di creazione del sottosistema e viene inoltre indicato con una spunta rossa se il sistema è di tipo On-Premise.
 
